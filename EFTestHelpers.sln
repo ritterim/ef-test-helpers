@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DFE1CF0F-1E80-4253-A561-1DB715DC3E3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FD349ADD-4D56-4314-97D8-BC66B5D091BC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EFTestHelpers", "src\EFTestHelpers\EFTestHelpers.xproj", "{C0712664-A565-46AE-81BB-7B8BC99D2FDF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EFTestHelpers.Tests", "tests\EFTestHelpers.Tests\EFTestHelpers.Tests.xproj", "{331D2356-563D-4383-9D8A-6AA0B68D27CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9636C34F-A0DC-4692-80EE-E8D63FD88641}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0712664-A565-46AE-81BB-7B8BC99D2FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0712664-A565-46AE-81BB-7B8BC99D2FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0712664-A565-46AE-81BB-7B8BC99D2FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0712664-A565-46AE-81BB-7B8BC99D2FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331D2356-563D-4383-9D8A-6AA0B68D27CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331D2356-563D-4383-9D8A-6AA0B68D27CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331D2356-563D-4383-9D8A-6AA0B68D27CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331D2356-563D-4383-9D8A-6AA0B68D27CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0712664-A565-46AE-81BB-7B8BC99D2FDF} = {DFE1CF0F-1E80-4253-A561-1DB715DC3E3F}
+		{331D2356-563D-4383-9D8A-6AA0B68D27CD} = {FD349ADD-4D56-4314-97D8-BC66B5D091BC}
+	EndGlobalSection
+EndGlobal
