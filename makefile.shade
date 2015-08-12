@@ -1,0 +1,4 @@
+var VERSION='0.1'
+var FULL_VERSION='0.1'
+
+use-standard-lifecycle
