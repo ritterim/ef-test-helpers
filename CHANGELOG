@@ -1,0 +1,2 @@
+2015-08-12
+    * Change namespaces to `RimDev.EFTestHelpers` and `RimDev.EFTestHelpers.Tests` respectively.
