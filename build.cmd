@@ -16,7 +16,7 @@ if not exist .nuget @mkdir .nuget
 
 :Restore
 if exist packages\KoreBuild goto Build
-.nuget\NuGet.exe install KoreBuild -ExcludeVersion -o packages -nocache -pre
+.nuget\NuGet.exe install KoreBuild -Version 0.2.1-beta6-10170 -ExcludeVersion -o packages -nocache -pre
 .nuget\NuGet.exe install Sake -Version 0.2 -ExcludeVersion -o packages -nocache
 
 :Build
