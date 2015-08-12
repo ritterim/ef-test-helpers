@@ -6,6 +6,8 @@
     "projectUrl": "",
     "licenseUrl": "",
 
+    "compilationOptions": { "warningsAsErrors": true },
+
     "dependencies": {
         "EntityFramework": "6.1.3"
     },
