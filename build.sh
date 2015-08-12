@@ -23,7 +23,7 @@ if test ! -e .nuget; then
 fi
 
 if test ! -d packages/KoreBuild; then
-    mono .nuget/nuget.exe install KoreBuild -ExcludeVersion -o packages -nocache -pre
+    mono .nuget/nuget.exe install KoreBuild -Version 0.2.1-beta6-10170 -ExcludeVersion -o packages -nocache -pre
     mono .nuget/nuget.exe install Sake -version 0.2 -o packages -ExcludeVersion
 fi
 
