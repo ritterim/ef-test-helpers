@@ -21,7 +21,7 @@ if exist packages\KoreBuild goto Build
 
 :Build
 if "%SKIP_DNX_INSTALL%"=="1" goto Run
-call packages\KoreBuild\build\dnvm upgrade -runtime CLR -arch x86
+call packages\KoreBuild\build\dnvm install 1.0.0-beta6 -a default -runtime CLR -arch x86
 
 :Run
 call packages\KoreBuild\build\dnvm use default -runtime CLR -arch x86
