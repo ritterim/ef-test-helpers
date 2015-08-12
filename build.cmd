@@ -16,12 +16,12 @@ if not exist .nuget @mkdir .nuget
 
 :Restore
 if exist packages\KoreBuild goto Build
-.nuget\NuGet.exe install KoreBuild -ExcludeVersion -o packages -nocache -pre
+.nuget\NuGet.exe install KoreBuild -Version 0.2.1-beta6-10170 -ExcludeVersion -o packages -nocache -pre
 .nuget\NuGet.exe install Sake -Version 0.2 -ExcludeVersion -o packages -nocache
 
 :Build
 if "%SKIP_DNX_INSTALL%"=="1" goto Run
-call packages\KoreBuild\build\dnvm upgrade -runtime CLR -arch x86
+call packages\KoreBuild\build\dnvm install 1.0.0-beta6 -a default -runtime CLR -arch x86
 
 :Run
 call packages\KoreBuild\build\dnvm use default -runtime CLR -arch x86
