@@ -35,7 +35,8 @@ namespace RimDev.EFTestHelpers.Tests
             Database.People.Add(person);
             Database.SaveChanges();
 
-            Assert.Equal(1, person.Id);
+            Assert.Equal(1, Database.People.Count());
+            Assert.Equal(0, person.Id);
         }
     }
 }
