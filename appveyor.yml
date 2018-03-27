@@ -1,0 +1,19 @@
+image: Visual Studio 2017
+
+cache:
+  - tools -> build.cake
+
+install:
+  - choco install gitversion.portable -pre -y
+
+before_build:
+  - ps: C:\ProgramData\chocolatey\bin\gfv.exe $env:APPVEYOR_BUILD_FOLDER /l console /output buildserver /updateAssemblyInfo /nofetch /b $env:APPVEYOR_REPO_BRANCH
+
+build_script:
+  - ps: ./build.ps1
+
+test: off
+
+artifacts:
+  - path: ./msbuild.log
+  - path: ./artifacts/*.nupkg
