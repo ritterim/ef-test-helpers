@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <Description>EFTestHelpers</Description>
-    <VersionPrefix>1.0.0-build</VersionPrefix>
     <Authors>RimDev</Authors>
     <TargetFramework>net45</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
